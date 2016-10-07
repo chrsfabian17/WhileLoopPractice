@@ -9,9 +9,9 @@ public class LoopController
 public void start()
     {
 	whileLoopTest();
-	
 	forLoopTest();
 	enhancedForLoopTest();
+    nestedLoopTest();
     }
 
      
@@ -64,11 +64,29 @@ public void start()
 	    	ryhmeMachine.add("Gotta scat-Rat!");
 	    	for(String currentRyhme : ryhmeMachine)
 	    	{
-	    		JOptionPane.showMessageDialog(null, "The current rhyme is:" + currentRyhme);
+	    		JOptionPane.showMessageDialog(null, "The current rhyme is: " + currentRyhme);
 	    	}
-	    	
-	    	
-	   }
+	    	{
+	    	ArrayList<String> Words = new ArrayList<String>();
+	    	Words.add("robots");
+	    	Words.add("More robots");
+	    	Words.add("Robots are scary.");
+	    	for(String currentWord : Words)
+	    	{
+	    		JOptionPane.showMessageDialog(null, "The current word structure is: " + currentWord);
+	       } 	  
+	  }
+ }
+	  private void nestedLoopTest()
+	  {
+		  for(int i =1; i <= 5; i++)
+		  {
+			  for (int j = 1; j <= 10; j++)
+			  {
+				  System.out.print((j * i) + "");
+			  }
+		  }
+	  }
   }
 
 	
